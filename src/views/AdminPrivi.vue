@@ -5,14 +5,14 @@
     <b-tabs card>
       <b-tab title="Operador" active>
       	<b-input-group prepend="Ficha" class="mt-3">
-	    <b-form-input type="number" />
+	    <b-form-input v-model="ficha" type="number" />
 	    <b-input-group-append>
 	      <b-button variant="outline-success">Buscar</b-button>
 	    </b-input-group-append>
 	  	</b-input-group>
 	  	<b-row >
 	  		<b-col sm="3">
-	  			<label for="user" class=mt-3>Usuario: -----------</label>
+	  			<label for="user" class=mt-3>Usuario:{{ficha}}</label>
 			</b-col>
         </b-row>
         <b-card class="text-center mt-2"
@@ -106,6 +106,7 @@ export default {
     
     data(){
         return{
+          ficha:'',
             privilegiosOp:[
                 {index:1,privilegio:'Unidades Fabricadas',type:'OPERADOR', estado: 'accepted'},
                 {index:2,privilegio:'Inicio de Producción',type:'OPERADOR',estado: 'accepted'},

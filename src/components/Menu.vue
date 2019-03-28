@@ -44,7 +44,7 @@
           </b-nav-item-dropdown>
 
           <b-nav-item-dropdown text="Name User" right>
-            <b-dropdown-item :to="{name: '/'}">Cerrar Sesión</b-dropdown-item>
+            <b-dropdown-item :to="{name: 'login'}">Cerrar Sesión</b-dropdown-item>
           </b-nav-item-dropdown>
         </b-navbar-nav>
       </b-collapse>
