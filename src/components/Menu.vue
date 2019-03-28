@@ -3,7 +3,7 @@
   <div>
       <b-navbar toggleable="md" type="dark" style="background-color: #4a6f90">
         <b-navbar-brand href="#">
-            <img :src="logoSrc" width="60px" height="40px" alt="BV" />
+            <img :src="logoSrc" width="60px" height="40px" alt="Wix" />
         </b-navbar-brand>
         <b-navbar-toggle target="nav_collapse"/>
         <b-collapse is-nav id="nav_collapse">
@@ -60,7 +60,7 @@ export default {
     name: "Menu",
     data(){
       return{
-        logoSrc: "./img/WixFilter.png"
+        logoSrc: require('@/assets/WixFilter.png')
       }
     }
 }
