@@ -107,10 +107,8 @@ export default {
             ],
             options:[
             	{ value: null, text: 'Seleccione...' },
-            	{ value: 'a', text: 'This is First option' },
-		        { value: 'b', text: 'Selected Option' },
-		        { value: { C: '3PO' }, text: 'This is an option with object value' },
-		        { value: 'd', text: 'This one is disabled', disabled: true }
+            	{ value: 'a', text: 'Maquina nombre 1' },
+		        { value: 'b', text: 'Maquina nombre 2' }
             ],
             filter:null,
             bordered: true,
