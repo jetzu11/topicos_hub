@@ -37,7 +37,10 @@
                     </b-col>
                 </b-row>
             
-                <b-button @click="selectOption" variant="outline-success">Iniciar Parada</b-button>
+                <b-button v-b-modal.modal-1 @click="selectOption" variant="outline-success">Finalizar Parada</b-button>
+                <b-modal id="modal-1" title="Fin de Parada">
+                <p class="my-4">¿Seguro que desea Finalizar la Parada?</p>
+                </b-modal>
                 
             </b-card>
         </b-card-group>    
@@ -73,8 +76,7 @@ export default {
     methods:{
         selectOption () {
         // select option from parent component
-        console.log(this.item.text,this.item.value);
-        alert(this.item.text+this.item.value);
+        
       }
     },
     components:{

@@ -15,7 +15,7 @@
         </b-input-group>
         <b-row>
           <b-col sm="3">
-            <label for="user" class=mt-3>Usuario:{{ficha}}</label>
+            <label for="user" class=mt-3>Usuario: {{ficha}}</label>
           </b-col>
         </b-row>
         <b-card class="text-center mt-2">
@@ -45,7 +45,7 @@
         </b-input-group>
         <b-row>
           <b-col sm="3">
-            <label for="user" class=mt-3>Usuario:{{ficha}}</label>
+            <label for="user" class=mt-3>Usuario: {{ficha}}</label>
           </b-col>
         </b-row>
         <b-card class="text-center mt-2">
@@ -72,7 +72,7 @@
         </b-input-group>
         <b-row>
           <b-col sm="3">
-            <label for="user" class=mt-3>Usuario:{{ficha}}</label>
+            <label for="user" class=mt-3>Usuario: {{ficha}}</label>
           </b-col>
         </b-row>
         <b-card class="text-center mt-2">
