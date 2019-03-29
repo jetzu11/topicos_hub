@@ -21,7 +21,7 @@
         <b-card class="text-center mt-2" border-variant="warning" header-bg-variant="warning"
           :header="'ADMINISTRACIÓN DE PRIVILEGIOS'" header-tag="header">
           <b-table :bordered="bordered" :hover="hover" :items="privilegiosOp" :fields="fieldsTiPro">
-            <template slot="estado" slot-scope="row">
+            <template slot="estado" >
               <b-form-checkbox switch name="check-button">
               </b-form-checkbox>
             </template>
@@ -49,7 +49,7 @@
         <b-card class="text-center mt-2" border-variant="warning" header-bg-variant="warning"
           :header="'ADMINISTRACIÓN DE PRIVILEGIOS'" header-tag="header">
           <b-table :bordered="bordered" :hover="hover" :items="privilegiosSup" :fields="fieldsTiPro">
-            <template slot="estado" slot-scope="row">
+            <template slot="estado" >
               <b-form-checkbox switch name="check-button">
               </b-form-checkbox>
             </template>
@@ -74,7 +74,7 @@
         <b-card class="text-center mt-2" border-variant="warning" header-bg-variant="warning"
           :header="'ADMINISTRACIÓN DE PRIVILEGIOS'" header-tag="header">
           <b-table :bordered="bordered" :hover="hover" :items="privilegiosAdm" :fields="fieldsTiPro">
-            <template slot="estado" slot-scope="row">
+            <template slot="estado" >
               <b-form-checkbox switch name="check-button">
               </b-form-checkbox>
             </template>
