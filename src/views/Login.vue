@@ -1,9 +1,14 @@
 <template>
-    <div class="container mt-5">
-    <div class="row justify-content-center">
-        <div class="col-md-8">            
+<b-container class="mt-5">
+  <b-row class="justify-content-center">
+ <div class="col-md-6">            
             <b-card class="shadow p-3 mb-5 bg-white rounded">
-                <div class="card-header text-center">Sistema de Producción</div>
+                <div class="text-center">
+                        <img :src="logoSrc" width="20%" height="20%" alt="Logo" />
+                    </div>                    
+                    <div class="card-header text-center">
+                        Sistema de Producción 
+                    </div>
 
                 <div class="card-body">
                     <form method="POST" action="">
@@ -51,14 +56,14 @@
             </b-card>
             
         </div>
-    </div>
-</div>
-
+  </b-row>
+</b-container>
 </template>
 <script>
  export default {
     data() {
       return {
+        logoSrc: require('@/assets/WixFilter.png'),
         name: '',
         names: []
       }
