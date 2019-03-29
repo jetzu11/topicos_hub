@@ -3,7 +3,7 @@
   <Menu></Menu>
   <b-card no-body>
     <b-tabs card>
-      <b-tab active>
+      <b-tab>
         <div slot="title">
           <b-spinner type="grow" small></b-spinner><strong>Operador</strong>
         </div>
@@ -18,8 +18,10 @@
             <label for="user" class=mt-3>Usuario:{{ficha}}</label>
           </b-col>
         </b-row>
-        <b-card class="text-center mt-2" border-variant="warning" header-bg-variant="warning"
-          :header="'ADMINISTRACIÓN DE PRIVILEGIOS'" header-tag="header">
+        <b-card class="text-center mt-2">
+          <b-card-header style="background:#f8b739">
+          <h6 slot="header" style="color:white">Administracion de Privilegios</h6>
+          </b-card-header>
           <b-table :bordered="bordered" :hover="hover" :items="privilegiosOp" :fields="fieldsTiPro">
             <template slot="estado" >
               <b-form-checkbox switch name="check-button">
@@ -46,8 +48,10 @@
             <label for="user" class=mt-3>Usuario:{{ficha}}</label>
           </b-col>
         </b-row>
-        <b-card class="text-center mt-2" border-variant="warning" header-bg-variant="warning"
-          :header="'ADMINISTRACIÓN DE PRIVILEGIOS'" header-tag="header">
+        <b-card class="text-center mt-2">
+          <b-card-header style="background:#f8b739">
+          <h6 slot="header" style="color:white">Administracion de Privilegios</h6>
+          </b-card-header>
           <b-table :bordered="bordered" :hover="hover" :items="privilegiosSup" :fields="fieldsTiPro">
             <template slot="estado" >
               <b-form-checkbox switch name="check-button">
@@ -71,8 +75,10 @@
             <label for="user" class=mt-3>Usuario:{{ficha}}</label>
           </b-col>
         </b-row>
-        <b-card class="text-center mt-2" border-variant="warning" header-bg-variant="warning"
-          :header="'ADMINISTRACIÓN DE PRIVILEGIOS'" header-tag="header">
+        <b-card class="text-center mt-2">
+          <b-card-header style="background:#f8b739">
+          <h6 slot="header" style="color:white">Administracion de Privilegios</h6>
+          </b-card-header>
           <b-table :bordered="bordered" :hover="hover" :items="privilegiosAdm" :fields="fieldsTiPro">
             <template slot="estado" >
               <b-form-checkbox switch name="check-button">
@@ -123,11 +129,6 @@ export default {
     components:{
       Menu
     }
-
-
-
-
-
 }
 </script>
 

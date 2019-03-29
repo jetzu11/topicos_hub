@@ -7,7 +7,7 @@
         header="Unidades fabricadas"
         header-tag="header">
             
-            <b-row class="mb-2">
+            <b-row class="mb-2 text-md-right">
                 <b-col sm="3">
                     <label for="PiezaId">Pieza:</label>
                 </b-col>
@@ -15,7 +15,7 @@
                     <b-form-select id="PiezaId" :options="pieza" required/>
                 </b-col>
             </b-row>
-            <b-row class="mb-2">
+            <b-row class="mb-2 text-md-right">
                 <b-col sm="3">
                     <label for="CantidadFabricada">Cantidad fabricada:</label>
                 </b-col>

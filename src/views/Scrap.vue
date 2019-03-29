@@ -7,7 +7,7 @@
         header="Scrap"
         header-tag="header">
             
-            <b-row class="mb-2">
+            <b-row class="mb-2 text-md-right">
                 <b-col sm="3">
                     <label for="PiezaId">Pieza:</label>
                 </b-col>
@@ -15,7 +15,7 @@
                     <b-form-select id="PiezaId" :options="pieza" required/>
                 </b-col>
             </b-row>
-            <b-row class="mb-2">
+            <b-row class="mb-2 text-md-right">
                 <b-col sm="3">
                     <label for="scrap">Razon del Scrap:</label>
                 </b-col>
@@ -30,7 +30,7 @@
                     </model-list-select>
                 </b-col>
             </b-row>
-            <b-row class="mb-2">
+            <b-row class="mb-2 text-md-right">
                 <b-col sm="3">
                     <label for="CantidadScrap">Cantidad de Scrap:</label>
                 </b-col>
