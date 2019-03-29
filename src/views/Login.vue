@@ -4,7 +4,7 @@
       <b-col cols="6">
         <div class="card shadow mb-5 bg-white rounded">
           <div class="text-center pt-2">
-            <img :src="logoSrc" width="20%" height="20%" alt="Logo" />
+            <img :src="logoSrc" width="50%" height="40%" alt="Logo" />
           </div>
           <div class="card-header text-center">
             Sistema de Producción
@@ -56,7 +56,7 @@
  export default {
     data() {
       return {
-        logoSrc: require('@/assets/WixFilter.png'),
+        logoSrc: require('@/assets/Logo.png'),
         name: '',
         names: []
       }

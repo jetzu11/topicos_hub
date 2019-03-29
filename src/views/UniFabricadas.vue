@@ -20,10 +20,13 @@
                     <label for="CantidadFabricada">Cantidad fabricada:</label>
                 </b-col>
                 <b-col sm="9">
-                    <b-form-input id="CantidadFabricada" type="number" />
+                    <b-form-input v-model="cantidad" id="CantidadFabricada" type="number" />
                 </b-col>
             </b-row>
-            <b-button variant="outline-success">Guardar</b-button>
+            <b-button v-b-modal.modal-1 variant="outline-success">Guardar</b-button>
+            <b-modal id="modal-1" title="Unidades Fabricadas">
+                <p class="my-4">¿Seguro que desea cargar la cantidad de {{cantidad}}?</p>
+            </b-modal>
            
         </b-card>
     </b-card-group>
@@ -45,7 +48,8 @@ import Menu from '@/components/Menu'
 export default {
     
     data(){
-        return{      
+        return{
+            cantidad:0,      
             pieza: [
                 {value: 'a', text: 'numero de pieza',disabled:true}
             ],

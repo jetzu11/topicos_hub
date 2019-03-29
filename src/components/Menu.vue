@@ -1,16 +1,15 @@
 <template>
 <div class="app" >
   <div>
-      <b-navbar toggleable="md" type="dark" style="background-color: #4a6f90">
-        <b-navbar-brand href="#">
-            <img :src="logoSrc" width="60px" height="40px" alt="Wix" />
-        </b-navbar-brand>
+      <b-navbar toggleable="md" type="dark" style="background-color: #068100">
+        
         <b-navbar-toggle target="nav_collapse"/>
         <b-collapse is-nav id="nav_collapse">
         <b-navbar-nav>
         
 
-          <b-nav-item to="#">Mann+Hummel</b-nav-item>
+          <b-nav-item > <h6 style="color:white;">MANN+<br>HUMMEL
+            </h6> </b-nav-item>
 
           <!-- Navbar dropdowns -->
           <b-nav-item-dropdown text="Produccion" right>

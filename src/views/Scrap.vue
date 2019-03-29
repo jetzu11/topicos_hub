@@ -35,10 +35,13 @@
                     <label for="CantidadScrap">Cantidad de Scrap:</label>
                 </b-col>
                 <b-col sm="9">
-                    <b-form-input id="CantidadScrap" type="number" />
+                    <b-form-input v-model="cantidad" id="CantidadScrap" type="number" />
                 </b-col>
             </b-row>
-            <b-button variant="outline-success">Guardar</b-button>
+            <b-button v-b-modal.modal-1 variant="outline-success">Guardar</b-button>
+            <b-modal id="modal-1" title="Reporte de Scrap">
+                <p class="my-4">¿Seguro que desea cargar la cantidad de {{cantidad}}?</p>
+            </b-modal>
             
         </b-card>
     </b-card-group>
@@ -62,6 +65,7 @@ export default {
     
     data(){
         return{
+            cantidad:0, 
             options1: [
                 { code: '01', name: 'aa'},
                 { code: '02', name: 'ab'},

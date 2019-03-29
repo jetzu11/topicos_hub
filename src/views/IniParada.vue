@@ -24,7 +24,10 @@
                 </b-col>
             </b-row>
            
-            <b-button variant="outline-success">Iniciar Parada</b-button>
+            <b-button  v-b-modal.modal-1 variant="outline-success">Iniciar Parada</b-button>
+            <b-modal id="modal-1" title="Inicio de Parada">
+                <p class="my-4">¿Seguro que desea Iniciar la Parada?</p>
+            </b-modal>
             
         </b-card>
     </b-card-group>
