@@ -1,29 +1,21 @@
 <template>
-<div xs="12">
-    <Menu></Menu>
-    <b-card-group deck v-for="proceso in procesos" :key="proceso.index">
-        <b-card class="text-center mt-2"
-        border-variant="warning"
-        header-bg-variant="warning"
-        :header="'PROCESO DE '+proceso.title"
-        header-tag="header">
-            <b-table
-            :bordered="bordered"
-            :hover="hover"
-            :items="detalleTiempo"
-            :fields="fieldsTiPro"
-            >
-                <template slot="verDetalle" >
+    <div>
+        <Menu />
+        <b-card v-for="proceso in procesos" :key="proceso.index" class="text-center m-2">
+
+            <b-card-header style="background:#f8b739">
+                <h6 slot="header" style="color:white">PROCESO DE {{proceso.title}}</h6>
+            </b-card-header>
+            <b-table :bordered="bordered" :hover="hover" :items="detalleTiempo" :fields="fieldsTiPro">
+                <template slot="verDetalle">
                     <b-button size="sm" variant="outline-dark" block :to="{name: 'ProduActualDetalle'}" class="mr-2">
                         Ver detalle
                     </b-button>
                 </template>
             </b-table>
         </b-card>
-    </b-card-group>
-    
-</div>
-    
+    </div>
+
 </template>
 <script>
 import Menu from '@/components/Menu'

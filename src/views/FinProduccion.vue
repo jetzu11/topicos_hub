@@ -59,9 +59,11 @@
             <div class="d-block text-center">
                 <h5>¿Desea finalizar la Producción?</h5>
             </div>
-            <b-button class="mt-2" variant="outline-success" block @click="toggleModal">Aceptar</b-button>
-            <b-button class="mt-3" variant="outline-danger" block @click="hideModal">Cerrar</b-button>            
-        </b-modal>
+            <div class="col-xs-12">
+                <b-button class="mt-3 mr-3 p-2" variant="success"  @click="toggleModal">Aceptar</b-button>
+                <b-button class="mt-3 mr-3 p-2" variant="danger"  @click="hideModal">Cerrar</b-button>
+            </div>
+            </b-modal>
     </b-container>
 </div>
     

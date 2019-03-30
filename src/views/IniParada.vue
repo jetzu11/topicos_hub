@@ -7,7 +7,7 @@
         header="Inicio de Parada"
         header-tag="header">
             
-            <b-row class="mb-2">
+            <b-row class="mb-2 text-md-right">
                 <b-col sm="3">
                     <label for="MaquinaId">Maquina:</label>
                 </b-col>
@@ -15,7 +15,7 @@
                     <b-form-select id="MaquinaId" :options="maquina" required/>
                 </b-col>
             </b-row>
-            <b-row class="mb-2">
+            <b-row class="mb-2 text-md-right">
                 <b-col sm="3">
                     <label for="PiezaId">Pieza:</label>
                 </b-col>
@@ -24,7 +24,10 @@
                 </b-col>
             </b-row>
            
-            <b-button variant="outline-success">Iniciar Parada</b-button>
+            <b-button  v-b-modal.modal-1 variant="outline-success">Iniciar Parada</b-button>
+            <b-modal id="modal-1" title="Inicio de Parada">
+                <p class="my-4">¿Seguro que desea Iniciar la Parada?</p>
+            </b-modal>
             
         </b-card>
     </b-card-group>
