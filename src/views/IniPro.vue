@@ -31,9 +31,9 @@
                 </b-col>
             </b-row>
             <b-button  v-b-modal.modal-1 variant="outline-success">Guardar</b-button>
-                <b-modal id="modal-1" title="Inicio de Jornada">
-                    <p class="my-4">¿Desea confirmar el inicio de jornada?</p>
-                </b-modal>
+            <b-modal id="modal-1" title="Inicio de Jornada">
+                <p class="my-4">¿Desea confirmar el inicio de jornada?</p>
+            </b-modal>
         </b-card>
     </b-card-group>
 

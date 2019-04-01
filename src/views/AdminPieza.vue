@@ -26,7 +26,7 @@
             <b-form-checkbox checked=true>
             </b-form-checkbox>
           </template>
-          <template slot="modificar">
+          <template slot="modificar" slot-scope="row">
             <b-button size="sm" @click="info(row.item,row.index,$event.target)" variant="primary outline-dark" block
               class="mr2">
               Modificar
@@ -54,19 +54,18 @@
       </div>
     </b-container>
   </div>
-
 </template>
 <script>
 import Menu from '@/components/Menu'
-	const items= [
-            { pieza: "17-0001", descripcion: 'Pieza1', uni_medi: 'UND' ,visible:'accepted'},
-            { pieza: "17-0002", descripcion: 'Pieza2', uni_medi: 'UND' ,visible:'not_accepted'},
-            { pieza: "17-0003", descripcion: 'Pieza3', uni_medi: 'L' ,visible:'not_accepted'}
-            ]
+
 export default {
     data(){
         return{ 
-        	items: items,     
+        	items: [
+            { pieza: "17-0001", descripcion: 'Pieza1', uni_medi: 'UND' ,visible:'accepted'},
+            { pieza: "17-0002", descripcion: 'Pieza2', uni_medi: 'UND' ,visible:'not_accepted'},
+            { pieza: "17-0003", descripcion: 'Pieza3', uni_medi: 'L' ,visible:'not_accepted'}
+            ],     
             fields: [
                 {key:'pieza',label:'Nro Pieza',sortable: true},
                 {key:'descripcion',label:'Descripción',sortable: true},
@@ -80,21 +79,21 @@ export default {
             filter:null,
             bordered: true,
             hover: true,
-            footClone: true,
             modalInfo: { title: '', descripcion: '', uni:'' }
         }
 
     },
     methods:{
     	info(item, index, button) {
-        this.modalInfo.title = `Pieza: ${item.pieza}`,
-        this.modalInfo.descripcion=`${item.descripcion}`,
-        this.modalInfo.uni=`${item.uni_medi}`,
+        this.modalInfo.title = 'Pieza:'+item.pieza
+        this.modalInfo.descripcion=item.descripcion
+        this.modalInfo.uni=item.uni_medi
         this.$root.$emit('bv::show::modal', 'modalInfo', button)
       },
       resetModal() {
         this.modalInfo.title = ''
-        this.modalInfo.content = ''
+        this.modalInfo.descripcion=''
+        this.modalInfo.uni=''
       }
 
     },

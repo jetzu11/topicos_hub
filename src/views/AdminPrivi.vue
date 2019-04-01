@@ -5,7 +5,7 @@
     <b-tabs card>
       <b-tab>
         <div slot="title">
-          <b-spinner type="grow" small></b-spinner><strong>Operador</strong>
+          <strong>Operador</strong>
         </div>
         <b-input-group prepend="Ficha" class="mt-3">
           <b-form-input v-model="ficha" type="number" />
@@ -35,7 +35,7 @@
 
       <b-tab>
         <div slot="title">
-          <b-spinner type="grow" small></b-spinner><strong>Supervisor</strong>
+          <strong>Supervisor</strong>
         </div>
         <b-input-group prepend="Ficha" class="mt-3">
           <b-form-input v-model="ficha" type="number" />
@@ -62,7 +62,7 @@
       </b-tab>
       <b-tab>
         <div slot="title">
-          <b-spinner type="grow" small></b-spinner><strong>Administrador</strong>
+          <strong>Administrador</strong>
         </div>
         <b-input-group prepend="Ficha" class="mt-3">
           <b-form-input v-model="ficha" type="number" />
